@@ -1,0 +1,29 @@
+body {
+  background-color: whitesmoke;
+}
+.titulo {
+  color: brown;
+  text-transform: uppercase;
+}
+
+footer {
+  font-weight: bold;
+}
+* {
+  font-family: "Inconsolata", monospace;
+}
+
+#formulario * {
+  display: block;
+}
+
+input[type="text"] {
+  margin-bottom: 15px;
+  padding: 10px;
+  width: 300px;
+  height: 10px;
+}
+
+input[type="submit"] {
+  cursor: pointer;
+}
