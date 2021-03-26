@@ -72,8 +72,8 @@ nav {
 #nav ul {
   list-style: none;
   text-decoration: none;
-  margin-left: 170px;
-  width: 1300px;
+  margin-left: 300px;
+  width: 100%;
 }
 nav a {
   text-decoration: none;
@@ -101,4 +101,87 @@ nav a {
 #nav li:hover {
   background-color: #70b231;
   box-shadow: 0px 0px 4px green inset;
+}
+
+#content {
+  width: 1250px;
+  min-height: 1100px;
+  margin-left: 50px;
+}
+
+aside {
+  width: 200px;
+  float: left;
+  margin: 30px;
+  margin-left: 0px;
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0px 2px 2px #ccc;
+}
+.title {
+  text-align: center;
+  background-color: rgb(188, 207, 159);
+  box-shadow: 0px 2px 2px #ccc;
+  margin: 10px 10px;
+}
+label {
+  margin: 10px;
+}
+
+input {
+  margin: 2px;
+  padding: 2px;
+}
+
+form input[type="submit"] {
+  background-color: #ccc;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  cursor: pointer;
+}
+#maincontent {
+  margin-top: 100px;
+  margin-left: 300px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.article1 a {
+  text-decoration: none;
+  color: lightskyblue;
+  font-weight: bolder;
+}
+#front {
+  border-radius: 4px;
+  border: solid #ccc;
+  width: 1286px;
+  margin: 20px 20px;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+}
+#backend {
+  border-radius: 4px;
+  border: solid #ccc;
+  width: 1286px;
+  margin: 20px 20px;
+  padding: 20px;
+}
+
+footer {
+  width: 100%;
+  margin: 0px auto;
+  text-align: center;
+  margin-top: 40px;
+  background-color: #333;
+  color: white;
+  letter-spacing: 4px;
+  height: 50px;
+  padding: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+footer a {
+  text-decoration: none;
+  color: #70b231;
+  font-weight: bolder;
 }
