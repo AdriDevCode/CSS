@@ -31,6 +31,11 @@ body {
   display: grid;
   gap: 1.6em;
   grid-template-columns: repeat(5, 1fr);
+  grid-template-areas:
+    "header header header header header"
+    "content content content sidebar sidebar"
+    "related related related related related"
+    "footer footer footer footer footer";
 }
 
 .containerGrid > .headerlogo,
@@ -43,16 +48,22 @@ body {
   border: 1px solid;
 }
 
-.containerGrid .headerlogo,
+.containerGrid .headerlogo {
+  grid-area: header;
+  background-color: #1e272e;
+  color: #fff;
+  text-align: center;
+}
+
 .containerGrid .footer {
-  grid-column: 1/6;
+  grid-area: footer;
   background-color: #1e272e;
   color: #fff;
   text-align: center;
 }
 /* El Span dentro de Grid Cuanto el numero de columnas o filas que se quiera usar para una determinada caja,  */
 .containerGrid > .content {
-  grid-column: span 3;
+  grid-area: content;
 }
 .content > .article {
   background: #808e9b;
@@ -67,7 +78,7 @@ body {
 }
 
 .containerGrid > .sidebar {
-  grid-column: span 2;
+  grid-area: sidebar;
   background: #485460;
   color: #fff;
   display: flex;
@@ -85,7 +96,6 @@ body {
   justify-content: center;
   transition: all 0.5s ease;
 }
-
 .containerGrid > .related-post:hover {
   cursor: pointer;
   color: #000;
@@ -106,16 +116,12 @@ img {
 }
 
 @media screen and (max-width: 768px) {
-  .headerlogo {
-    text-align: center;
-  }
-  .containerGrid .content {
-    grid-column: 1/-1;
-  }
-  .containerGrid .sidebar {
-    grid-column: 1/-1;
-  }
-  .containerGrid .related-post {
-    grid-column: 1/-1;
+  .containerGrid {
+    grid-template-areas:
+      "header header header header header"
+      "content content content content content"
+      "sidebar sidebar sidebar sidebar sidebar "
+      "related related related related related "
+      "footer footer footer footer footer";
   }
 }
